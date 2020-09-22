@@ -1,0 +1,25 @@
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<div id="app">
+    <p>
+        {{title}}
+    </p>
+    <p>
+        {{greeting()}}
+    </p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'Welcome!'
+        },
+        methods: {
+            greeting() {
+                return this.title;
+            }
+        }
+    })
+</script>
